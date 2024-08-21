@@ -26,13 +26,6 @@ terraform {
     }
   }
 
-  backend "s3" {
-    bucket = "vprofilebucket99"
-    key    = "s3-github-actions/terraform.tfstate"
-    region = "us-east-1"
-    encrypt = true
-  }
-
   required_version = "~> 1.6.3"
 }
 ##
